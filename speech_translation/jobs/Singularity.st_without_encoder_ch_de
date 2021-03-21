@@ -3,7 +3,7 @@ From:ubuntu:latest
 
 %labels
 MAINTAINER Bogumila
-SPECIES Data Preparation
+SPECIES Data_Preparation
 
 %environment
 RAWR_BASE=../venv
