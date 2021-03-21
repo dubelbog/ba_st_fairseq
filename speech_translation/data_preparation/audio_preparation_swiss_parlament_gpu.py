@@ -63,7 +63,7 @@ def gen_voc(train_text, spm_filename_prefix):
     for t in train_text:
         f.write(" ".join(t.split()[0:4]) + "\n")
     print(f.name)
-    speech_to_text.gen_vocab(
+    gen_vocab(
         Path(f.name),
         Path("../data/sound") / spm_filename_prefix
     )
