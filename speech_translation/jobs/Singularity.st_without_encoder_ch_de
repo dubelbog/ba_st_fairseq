@@ -1,0 +1,25 @@
+Bootstrap:docker
+From:ubuntu:latest
+
+%labels
+MAINTAINER Bogumila
+SPECIES Data Preparation
+
+%environment
+RAWR_BASE=../venv
+export RAWR_BASE
+
+%runscript
+echo "This gets run when you run the image!"
+# shellcheck disable=SC2093
+exec chmod +x ../speech_translation/data_preparation/audio_preparation_swiss_parlament.py
+# shellcheck disable=SC2093
+exec ./../speech_translation/data_preparation/audio_preparation_swiss_parlament.py
+
+%post
+echo "This section happens once after bootstrap to build the image."
+echo "It is ready"
+#mkdir -p /code
+#apt-get install vim
+#echo "RoooAAAAR" >> /code/rawr.sh
+#chmod u+x /code/rawr.sh
