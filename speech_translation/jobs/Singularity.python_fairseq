@@ -42,7 +42,6 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
         libpng-dev \
         libzmq3-dev \
         locales \
-        python-pip \
         pkg-config \
         python-dev \
         python-setuptools \
@@ -52,7 +51,7 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
         vim \
         zip \
         zlib1g-dev \
-
+        python3-pip
     apt-get clean
 
     # Set up some required environment defaults
@@ -70,7 +69,19 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
     pip install --no-cache-dir --upgrade \
         future \
         matplotlib \
-        scipy
+        scipy \
+        Cython \
+        fairseq \
+        datautil \
+        ffmpeg \
+        hydra \
+        numpy \
+        pandas \
+        pydub \
+        sacreblue \
+        sentencepiece \
+        torch \
+        torchaudio\
 
     #for OpenBLAS accelerated Python3 NumPy, install through pip3
     apt-get install -y python3-pip
