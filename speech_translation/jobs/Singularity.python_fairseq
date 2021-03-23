@@ -4,7 +4,7 @@ From:ubuntu:latest
 %post
     apt-get update -y
     apt-get install -y locales apt-utils
-    apt install python3-pip
+    apt-get install python3-pip
     pip3 help
     pip help
     pip install Cython fairseq datautil ffmpeg hydra numpy pandas pydub sacreblue sentencepiece torch torchaudio
