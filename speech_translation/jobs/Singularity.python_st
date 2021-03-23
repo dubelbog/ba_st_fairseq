@@ -63,7 +63,7 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
     echo 'LC_ALL="en_US.UTF-8"' >> /etc/default/locale
 
     # Install other commonly-needed python packages
-    pip3 install --no-cache-dir --upgrade \
+    pip3 install \
         future \
         matplotlib \
         scipy \
