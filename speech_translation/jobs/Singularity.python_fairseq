@@ -73,7 +73,6 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
         Cython \
         fairseq \
         datautil \
-        ffmpeg \
         hydra \
         numpy \
         pandas \
@@ -84,8 +83,6 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
         torchaudio\
 
     pip3 install --no-cache-dir --upgrade pip
-    pip3 install --no-cache-dir --upgrade pip
-    pip3 install --no-cache-dir --upgrade future matplotlib scipy Cython fairseq datautil ffmpeg hydra numpy pandas pydub sacreblue sentencepiece torch torchaudio
 
     # need to create mount point for home dir
     mkdir /uufs
@@ -113,6 +110,4 @@ LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 %test
     # Sanity check that the container is operating
-    # make sure that numpy is using openblas
-    /usr/bin/python -c "import numpy as np;np.__config__.show()"
 
