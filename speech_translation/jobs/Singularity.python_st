@@ -62,9 +62,6 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
     echo 'LANGUAGE="en_US.UTF-8"' >> /etc/default/locale
     echo 'LC_ALL="en_US.UTF-8"' >> /etc/default/locale
 
-    # Update to the latest pip (newer than repo)
-    pip3 install --no-cache-dir --upgrade pip
-
     # Install other commonly-needed python packages
     pip3 install --no-cache-dir --upgrade \
         future \
@@ -81,8 +78,6 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
         sentencepiece \
         torch \
         torchaudio\
-
-    pip3 install --no-cache-dir --upgrade pip
 
     # need to create mount point for home dir
     mkdir /uufs
