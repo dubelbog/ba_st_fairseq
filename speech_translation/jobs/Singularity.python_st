@@ -62,7 +62,7 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
     echo 'LANGUAGE="en_US.UTF-8"' >> /etc/default/locale
     echo 'LC_ALL="en_US.UTF-8"' >> /etc/default/locale
 
-    # Install other commonly-needed python packages
+    # Install other commonly-needed python packages test
     pip3 install \
         future \
         matplotlib \
