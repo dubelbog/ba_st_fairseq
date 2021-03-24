@@ -87,13 +87,13 @@ def preparation():
     df = pd.DataFrame.from_dict(manifest)
     split = "dev"
     task = "st_ch_de"
-    save_df_to_tsv(df, Path("../data/sound") / f"{split}_{task}.tsv")
-    spm_filename_prefix = f"spm_char_{task}"
+    save_df_to_tsv(df, Path("../data/sound") / split + "_" + task + ".tsv")
+    spm_filename_prefix = f"spm_char_" + task
     # Generate config YAML
     gen_config_yaml(
         Path("../data/sound"),
         spm_filename_prefix + ".model",
-        yaml_filename=f"config_{task}.yaml",
+        yaml_filename=f"config_" + task + ".yaml",
         specaugment_policy="lb",
         )
     # generating vocabulary
