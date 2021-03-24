@@ -77,25 +77,25 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
         torch \
         torchaudio\
 
-    # need to create mount point for home dir
-    mkdir /uufs
-    mkdir /scratch
+#    # need to create mount point for home dir
+#    mkdir /uufs
+#    mkdir /scratch
 
     # git, wget
     apt-get install -y git wget
     # LMod
     apt-get install -y liblua5.1-0 liblua5.1-0-dev lua-filesystem-dev lua-filesystem lua-posix-dev lua-posix lua5.1 tcl tcl-dev lua-term lua-term-dev lua-json
 
-    echo "
-if [ -f /uufs/chpc.utah.edu/sys/etc/profile.d/module.sh ]
-then
-   . /uufs/chpc.utah.edu/sys/etc/profile.d/module.sh
-fi
-   " > /etc/profile.d/91-chpc.sh
+#    echo "
+#if [ -f /uufs/chpc.utah.edu/sys/etc/profile.d/module.sh ]
+#then
+#   . /uufs/chpc.utah.edu/sys/etc/profile.d/module.sh
+#fi
+#   " > /etc/profile.d/91-chpc.sh
 
-    echo "
-. /etc/profile.d/91-chpc.sh
-" >> /etc/bash.bashrc
+#    echo "
+#. /etc/profile.d/91-chpc.sh
+#" >> /etc/bash.bashrc
 
 %environment
 PATH=/usr/local/bin:$PATH
