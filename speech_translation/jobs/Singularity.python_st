@@ -69,7 +69,6 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
         scipy \
         Cython \
         fairseq \
-        hydra \
         numpy \
         pandas \
         pydub \
