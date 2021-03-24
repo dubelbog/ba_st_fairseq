@@ -1,11 +1,9 @@
+# coding=utf-8
 from pydub import AudioSegment
 import torchaudio
 from examples.speech_to_text.data_utils import extract_fbank_features, save_df_to_tsv, gen_config_yaml, gen_vocab
 from pathlib import Path
 import pandas as pd
-import sys
-sys.path.append('/cluster/home/dubelbog/tools/python3_env/lib/python3.8/site-packages/ffmpeg')
-sys.path.append('/cluster/home/dubelbog/tools/python3_env/lib/python3.8/site-packages/ffprobe')
 
 root_path = "../data/swiss_corpus/"
 path_manifest_swiss = root_path + "test_sample.tsv"
