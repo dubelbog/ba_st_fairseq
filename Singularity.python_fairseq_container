@@ -24,4 +24,4 @@ From: ubuntu:18.04
     # which are useless now.
     rm -rf /var/lib/apt/lists/*
     # Install Python modules.
-    pip3 install torch numpy matplotlib scipy Cython fairseq pandas pydub sacrebleu sentencepiece torchaudio hydra
+    pip3 install torch numpy matplotlib scipy Cython fairseq pandas pydub sacrebleu torchaudio
