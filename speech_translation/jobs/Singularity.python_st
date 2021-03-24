@@ -73,7 +73,7 @@ Run as "ubuntu_python.simg [arguments]" which is equivalent to running "python [
         numpy \
         pandas \
         pydub \
-        sacreblue \
+        sacrebleu \
         sentencepiece \
         torch \
         torchaudio\
