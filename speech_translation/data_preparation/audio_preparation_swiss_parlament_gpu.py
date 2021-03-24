@@ -39,9 +39,9 @@ def text_processing(data):
 def manifest_preparation(manifest, track, data, tgt_text, track_path):
     waveform, sample_rate = torchaudio.load(track_path)
     utt_id = data[1].removesuffix(".flac")
-    extract_fbank_features(waveform, sample_rate, feature_root / f"{utt_id}.npy")
+    extract_fbank_features(waveform, sample_rate, feature_root / utt_id+".npy")
     manifest["id"].append(utt_id)
-    manifest["audio"].append(feature_root / f"{utt_id}.npy")
+    manifest["audio"].append(feature_root / utt_id+".npy")
     duration_ms = track.duration_seconds * ms
     manifest["n_frames"].append(int(1 + (duration_ms - 25) / 10))
     manifest["tgt_text"].append(tgt_text)
