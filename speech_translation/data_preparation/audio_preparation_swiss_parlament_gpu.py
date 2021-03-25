@@ -97,8 +97,9 @@ def preparation():
         specaugment_policy="lb",
         )
     # generating vocabulary
-    if len(train_text) > 0:
-        gen_voc(train_text, spm_filename_prefix)
+    # if len(train_text) > 0:
+    #     gen_voc(train_text, spm_filename_prefix)
 
 preparation()
+
 
