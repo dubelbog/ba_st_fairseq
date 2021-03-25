@@ -19,9 +19,13 @@ From: ubuntu:18.04
         python3-tk \
         python3-pip \
         python3-distutils \
-        python3-setuptools
+        python3-setuptools \
+        vim
     # Reduce the size of the image by deleting the package lists we downloaded,
     # which are useless now.
     rm -rf /var/lib/apt/lists/*
     # Install Python modules.
     pip3 install torch numpy matplotlib scipy Cython fairseq pandas pydub sacrebleu torchaudio
+
+%environment
+PYTHONPATH=/usr/bin/python3.6:/cluster/home/dubelbog/ba_st/ba_st_fairseq
