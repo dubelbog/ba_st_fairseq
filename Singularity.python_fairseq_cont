@@ -21,11 +21,10 @@ From: ubuntu:18.04
         python3-distutils \
         python3-setuptools \
         vim
+
+    export PYTHONPATH=/usr/bin/python3.6:/cluster/home/dubelbog/ba_st/ba_st_fairseq
     # Reduce the size of the image by deleting the package lists we downloaded,
     # which are useless now.
     rm -rf /var/lib/apt/lists/*
     # Install Python modules.
-    pip3 install torch numpy matplotlib scipy Cython fairseq pandas pydub sacrebleu torchaudio
-
-%environment
-export PYTHONPATH=/usr/bin/python3.6:/cluster/home/dubelbog/ba_st/ba_st_fairseq
+    pip3 install torch numpy matplotlib scipy Cython fairseq pandas pydub sacrebleu torchaudio sentencepiece
