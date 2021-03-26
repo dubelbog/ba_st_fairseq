@@ -22,7 +22,7 @@ import torch.utils.data as data_utils
 
 wav_input_16khz = torch.randn(1, 10000)
 print(wav_input_16khz.data.type())
-audio_input, _ = sf.read("data/sound/en/m0003_us_m0003_00348.wav")
+audio_input, _ = sf.read("/cluster/home/dubelbog/ba_st/ba_st_fairseq/speech_translation/data/sound/en/m0003_us_m0003_00348.wav")
 print(audio_input.dtype)
 data_utils.TensorDataset(torch.from_numpy(audio_input).float(), torch.from_numpy(audio_input).double())
 print(audio_input.dtype)
