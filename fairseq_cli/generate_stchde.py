@@ -30,7 +30,7 @@ from omegaconf import DictConfig
 # START ba_st_ch code
 MANIFEST_COLUMNS = ["id", "target_txt", "prediction"]
 # target_path = "/Users/bogumiladubel/Documents/BA/repos/st_ch_de/resources/parl/train_prediction/"
-target_path = "/home/ubuntu/repos/st_ch_de/resources/ubuntu2/permutation/config_minus15_5_08/"
+target_path = "/home/ubuntu/repos/ba_st_fairseq/resources/ubuntu2/permutation/config_minus15_5_08/"
 # swiss data
 # resource_path = "/Users/bdubel/Documents/ZHAW/BA/st_ch_de/resources/swiss/"
 # corpus_path = "/Users/bogumiladubel/Documents/BA/data/st/parl/"

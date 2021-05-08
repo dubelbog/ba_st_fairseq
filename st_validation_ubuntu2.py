@@ -5,7 +5,7 @@ def validation(root, checkpoints, config, manifest):
     for file in os.listdir(checkpoints):
         if file.endswith(".pt"):
             subset = os.path.join(checkpoints, file)
-            os.system("python3 /home/ubuntu/repos/st_ch_de/fairseq_cli/generate_stchde.py " + root +
+            os.system("python3 /home/ubuntu/repos/ba_st_fairseq/fairseq_cli/generate_stchde.py " + root +
                       " --config-yaml " + config +
                       " --gen-subset " + manifest +
                       " --task speech_to_text "
